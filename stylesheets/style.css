@@ -1,14 +1,121 @@
-.entry-title {
-  color: #652f93;
-  font-size: 2.5em;
+body {
+    margin: 40px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+  }
+
+/* TYPOGRAPHY  */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
 }
 
-footer {
-  text-align: center;
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000000;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
 }
 
-#main {
-  width: 80%;
-  min-width: 680px;
-  margin: 0 auto;
+p {
+    line-height: 1.5;
 }
+
+.para-small {
+    font-family: inherit;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+/* GRID LAYOUT  */
+  
+  .wrapper {
+    width: 1440px;
+    margin-left: auto ;
+    margin-right: auto ;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #fff;
+    grid-gap: 5px;
+    border: solid #00baff 2px;
+  }
+
+
+  .sidebar {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border: solid #00baff 2px;
+  }
+
+  .maincontent {
+    grid-column: 5 / 13;
+    grid-row: 1;
+    border: solid #00baff 2px;
+  }
+
+  .circle-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+/* ICONS  */
+
+  .logo {
+      width: 250px;
+  }
+
+  .triangle-icon {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #8d37e3;
+  }
+
+  .blue-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #5cb6ff;
+  }
+
+  .green-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #19f3be;
+  }
+
+  .pink-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ff0066;;
+  }
+
+
+/* BUTTONS  */
+
+.purple-button {
+    margin: 0 auto;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #8d37e3;
+    font-weight: 600;
+    width: 180px;
+    height: 45px;
+    border-radius: 6px;
+    background: transparent;
+    border: solid 2px #8d37e3;
+  }
