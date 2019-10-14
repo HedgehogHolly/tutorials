@@ -71,6 +71,7 @@ p {
     grid-template-rows: 5;
     border: solid #00baff 2px;
     height: 100vh;
+    
   }
 
   .circle-container {
